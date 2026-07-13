@@ -1,71 +1,133 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vitalis</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Tahoma,Arial,sans-serif;
 }
 
 body{
-background:#0b0b0b;
+background:#050505;
 color:white;
 }
 
 header{
-padding:50px 20px;
 text-align:center;
-background:linear-gradient(180deg,#000,#111);
+padding:80px 20px;
+background:#000;
 }
 
 h1{
-font-size:42px;
-color:#d4af37;
-margin-bottom:15px;
+font-size:65px;
+color:#C8A24A;
+text-shadow:0 0 18px rgba(200,162,74,.45);
+margin-bottom:20px;
 }
 
-p{
-color:#ddd;
-font-size:18px;
-line-height:1.8;
+.subtitle{
+font-size:28px;
+color:#ffffff;
+margin-bottom:40px;
+}
+
+.hero{
+width:320px;
+margin:auto;
+display:block;
+border-radius:20px;
+box-shadow:0 0 35px rgba(200,162,74,.30);
 }
 
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#d4af37;
+margin-top:40px;
+padding:18px 60px;
+background:linear-gradient(135deg,#E5C76B,#C8A24A);
 color:black;
+font-size:24px;
 font-weight:bold;
 text-decoration:none;
-border-radius:10px;
-font-size:18px;
+border-radius:12px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 section{
-padding:50px 20px;
-max-width:1000px;
-margin:auto;
+width:90%;
+max-width:1200px;
+margin:50px auto;
+background:#111;
+border:1px solid #2c2c2c;
+border-radius:20px;
+padding:40px;
 }
 
-.card{
-background:#181818;
-padding:25px;
-border-radius:15px;
-margin-top:20px;
-border:1px solid #333;
+section h2{
+color:#C8A24A;
+font-size:38px;
+margin-bottom:20px;
 }
 
-h2{
-color:#d4af37;
+section p{
+font-size:23px;
+line-height:2;
+}
+
+.features{
+list-style:none;
+font-size:23px;
+line-height:2.3;
+}
+
+.features li{
 margin-bottom:15px;
 }
+
+.price{
+text-align:center;
+font-size:45px;
+color:#C8A24A;
+font-weight:bold;
+margin-top:30px;
+}
+
+.old{
+text-decoration:line-through;
+color:#777;
+font-size:28px;
+display:block;
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:60px;
+}
+
+.order{
+display:inline-block;
+padding:20px 70px;
+background:linear-gradient(135deg,#E5C76B,#C8A24A);
+color:black;
+font-size:26px;
+font-weight:bold;
+border-radius:12px;
+text-decoration:none;
+}
+
 </style>
 
 </head>
@@ -76,11 +138,15 @@ margin-bottom:15px;
 
 <h1>Vitalis</h1>
 
-<p>
-عناية رجالية بتصميم فاخر وجودة عالية.
+<p class="subtitle">
+العناية الرجالية الفاخرة بجودة عالية
 </p>
 
-<a href="#" class="btn">
+<img src="IMAGE_HERE.jpg" class="hero">
+
+<br>
+
+<a class="btn" href="https://wa.me/2126XXXXXXXX">
 اطلب الآن
 </a>
 
@@ -88,25 +154,62 @@ margin-bottom:15px;
 
 <section>
 
-<div class="card">
 <h2>لماذا Vitalis؟</h2>
 
 <p>
-منتج بعناية فائقة مع تصميم فاخر وتغليف سري وتوصيل لجميع المدن المغربية.
+
+تصميم فاخر، تغليف سري، جودة عالية، وتوصيل سريع لجميع المدن المغربية مع الدفع عند الاستلام.
+
 </p>
 
-</div>
+</section>
 
-<div class="card">
-<h2>التوصيل</h2>
+<section>
 
-<p>
-الدفع عند الاستلام مع تغليف سري وسريع.
-</p>
+<h2>مميزات المنتج</h2>
+
+<ul class="features">
+
+<li>✔ تركيبة طبيعية عالية الجودة.</li>
+
+<li>✔ عناية موضعية للاستخدام الخارجي.</li>
+
+<li>✔ إحساس دافئ ومنعش عند الاستخدام.</li>
+
+<li>✔ غني بفيتامين E.</li>
+
+<li>✔ تغليف سري 100%.</li>
+
+<li>✔ توصيل مجاني.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>العرض الحالي</h2>
+
+<div class="price">
+
+<span class="old">399 DH</span>
+
+249 DH
 
 </div>
 
 </section>
 
+<footer>
+
+<a class="order" href="https://wa.me/2126XXXXXXXX">
+
+اطلب عبر واتساب
+
+</a>
+
+</footer>
+
 </body>
+
 </html>
